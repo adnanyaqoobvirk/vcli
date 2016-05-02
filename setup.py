@@ -28,7 +28,7 @@ setup(
         'prompt_toolkit==0.57',
         'Pygments >= 2.0',  # Pygments has to be Capitalcased. WTF?
         'sqlparse == 0.1.16',
-        'vertica-python==0.5.5',
+        'vertica-python==0.6.1',
         'setproctitle >= 1.1.9'
     ],
     entry_points='''
@@ -43,6 +43,10 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.2',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
         'Programming Language :: SQL',
         'Topic :: Database',
         'Topic :: Database :: Front-Ends',
