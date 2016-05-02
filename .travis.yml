@@ -24,6 +24,8 @@ env:
 install:
   - pip install .
   - pip install -r requirements-dev.txt
+  - if [[ $TRAVIS_PYTHON_VERSION == 2.6 ]]; then travis_retry pip install ordereddict; fi
+  - if [[ $TRAVIS_PYTHON_VERSION <= 3.0 ]]; then travis_retry pip install importlib; fi
 
 script:
   - cd tests
