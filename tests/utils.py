@@ -6,7 +6,10 @@ import vertica_python as vertica
 
 from vcli.main import format_output
 
-from urlparse import urlparse
+try:
+    from urlparse import urlparse
+except ImportError:
+    from urllib.parse import urlparse
 
 
 url = urlparse(os.getenv('VERTICA_URL'))

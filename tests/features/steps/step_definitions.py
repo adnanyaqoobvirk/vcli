@@ -15,7 +15,10 @@ import tempfile
 import pexpect
 import pip
 
-from urlparse import urlparse
+try:
+    from urlparse import urlparse
+except ImportError:
+    from urllib.parse import urlparse
 
 from behave import given, when, then
 
